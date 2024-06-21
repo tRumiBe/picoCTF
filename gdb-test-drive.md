@@ -27,13 +27,13 @@ sudo apt install gdb
 ```
 mkdir gdb_test_drive && cd gdb_test_drive
 ```
-4. Open the [GDB Test Drive challenge](https://play.picoctf.org/practice/challenge/273?page=1&search=GDB), and right click on the Binary file and copy the download link.
+4. Open the [GDB Test Drive challenge](https://play.picoctf.org/practice/challenge/273?page=1&search=GDB). On the popup, right click on the Binary link and copy the URL.
 
-5. Use `wget` command with the download link you copied in the previous step. 
+5. Use `wget` command with the URL you just copied in the previous step and download the file. 
 ```
 wget https://artifacts.picoctf.net/c/86/gdbme
 ```
-6. Use `chmod` command with the `+x`, followed by the file name to make **gdbme** executable.  
+6. Use `chmod` command with the `+x`, followed by the file name to make the file executable.  
 ```
 chmod +x gdbme
 ```
@@ -51,7 +51,7 @@ gdb gdbme
 ```
 ![GDB](https://github.com/tRumiBe/picoCTF/blob/main/images/1.png)
 
-9. View the assembly instructions.  
+9. View the assembly instructions using the following code.
 ```
 layout asm
 ```
